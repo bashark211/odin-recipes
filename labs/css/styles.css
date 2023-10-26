@@ -1,0 +1,150 @@
+body {
+    background-color: antiquewhite;
+    word-wrap: break-word;
+    width: auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ .grid_items {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 10px;
+        margin: 10px;
+        justify-content: center;
+}
+
+
+@media only screen and (max-width: 922px) { 
+    .grid_items {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .grid_items {
+        grid-template-columns: repeat(1, auto);
+    }
+}    
+
+section {
+    text-align: center;
+    padding: 10px;
+    padding-top: 20%;
+    margin: 10px;
+    border: 1px solid lightgray;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+
+}
+
+section:hover {
+    box-shadow: 0 0 15px #b5e2fd;
+    transition: 0.5s;
+}
+
+ol,ul {
+    display: inline-block;
+    text-align: left;
+    background-color: rgb(115, 147, 179, 0.5);
+    border-radius: 15px;
+    padding: 25px;
+    padding-left:35px; padding-right: 35px;
+    font-size: large;
+    font-family: Helvetica;
+    line-height: 2;
+}
+
+h1 {
+    font-family: dm-sans, sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: dm-sans, sans-serif;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: dm-sans, sans-serif;
+    font-size: large;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#acadimic_information {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url('https://campus7.in/wp-content/uploads/2022/04/erp-college-school.jpg');
+    background-size: cover;
+}
+
+#favorites {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url("https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/02/29113959/hobby-money.png");
+    background-size: cover;
+}
+
+#contact {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url("https://media.istockphoto.com/id/1227571863/vector/coronavirus-tracking-application.jpg?s=612x612&w=0&k=20&c=uhxLDW5Dt7THaZrRtp8IeKwTpO6Wn8Qw351zb5EXcQI=");
+    background-size: cover; 
+}
+
+#sports {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url("https://www.edumilestones.com/career-library/images/sports-person.png");
+    background-size: contain;
+}
+
+#city {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url("https://www.israeltravelcentre.com.au/wp-content/uploads/2019/10/Bethlehem.jpg");
+    background-size: cover;
+}
+
+#university {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url("https://www.caritasprovitaegradu.ch/wp-content/uploads/2019/06/Bethlehem-University-De-La-Salle-Hall.jpg");
+    background-size: cover;
+}
+
+#achievments {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url("https://edexec.co.uk/wp-content/uploads/2020/01/iStock-1158616210.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#projects {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url("https://www.upwave.io/wp-content/uploads/2021/09/Intro-to-project-management-02-1024x640.png");
+    background-size: cover;
+}
+
+#role {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)),
+    url("https://www.dodsdiversity.com/ugc-1/fullnews/news/199/176_big.jpg");
+    background-size: cover;
+}

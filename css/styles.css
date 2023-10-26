@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #313131;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+  flex-wrap: wrap;
+}
+
+
+.header {
+    background: #3f3f3f;
+    padding: 35px;
+    margin: 10px 12px;
+}
+
+.header h3 {
+    font-size: 2em;
+    color: #fff;
+
+}
+
+.header p {
+    font-weight: 300;
+    color: #ccc;
+}
+
+.header img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    padding: 20px 30px;
+    margin: 5px 20px;
+    background: #3f3f3f;
+}
+
+.container .card:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+/* triangle at the corner */
+.container .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid lightgreen;
+    border-right: 20px solid lightgreen;
+}
+
+.container .card .icon {
+    margin-bottom: 10px;
+}
+
+.container .card .icon img {
+    width: 90px;
+}
+
+.container .card .content  {
+    height: 100%;
+    position: relative;
+}
+
+
+
+.container .card .content h3 {
+    color : #fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container .card .content p,ul,ol {
+    font-weight: 300;
+    color: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: #ff8181;
+}
+
+
+.container .card .read-more-trigger {
+    position: relative;
+    padding: 10px 15px;
+    background: lightgreen;
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #383838; 
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+
+  .read-more-state{
+    display: none;
+  }
+  
+  .container .card .read-more-trigger:hover {
+    background: darkolivegreen;
+  }
+
+  .read-more-wrap {
+    display: none;
+  }
+
+  .read-more-state:checked ~ .read-more-wrap {
+    display: block;
+  }
+
